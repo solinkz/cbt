@@ -8,9 +8,13 @@
 
 :root{
     --default-font-size: 1.6rem;
-    --color-primary: rgb(98, 235, 189);
-    --color-black: #000;
-    --color-black-light: rgba(0,0,0,.8);
+    --color-primary: #60a9a6;
+    --color-secondary: #caf2d7;
+    --color-secondary-light: rgba(202, 242, 215, 0.5);
+    --color-black: rgba(0,0,0,.8);
+    --color-black-light: rgba(0,0,0,.6);
+
+    --app-top-height: 7rem;
 }
 
 html{
@@ -24,6 +28,109 @@ body{
     line-height: 1.5;
     font-size: var(--default-font-size);
     color: var(--color-black-light);
+    background-color: #f4f9f4;
 
 }
+
+.heading-primary, .heading-secondary, .heading-tertiary{
+    font-weight: 300;
+    line-height: 1.8;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+.heading-primary{
+    font-size: 3rem;
+}
+.heading-secondary{
+    font-size: 2.5rem;
+}
+.heading-tertiary{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+#app{
+    position: relative;
+}
+
+
+nav.app-top{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: var(--app-top-height);
+    top: 0;
+    left: 0;
+}
+
+
+
+.app-brand{
+    display: block;
+    padding: 1rem;
+    max-width: 10rem;
+    height: 100%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.app-brand .brand-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.content-wrapper{
+    display: block;
+    margin-top: 7rem;
+    /* margin-top: var(--app-top-height); */
+}
+
+.sidebar{
+    width: 30rem;
+    background-color: #fff;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,.15);
+    height: 70vh;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0;
+}
+
+.sidebar .sidebar-header{
+    padding: 2rem ;
+    text-align: center;
+}
+
+.sidebar .sidebar-header .sidebar-title{
+    font-size: 1.8rem;
+    color: var(--color-black);
+    font-weight: 400;
+
+}
+
+.sidebar-menu{
+   padding: 0;
+}
+
+.sidebar-menu ul li a{
+    padding: 2rem;
+    color: var(--color-black-light);
+    text-transform: capitalize;
+    transition: all .3s;
+}
+.sidebar-menu ul li a.active, .sidebar-menu ul li a:hover{
+   background-color: var(--color-secondary-light);
+}
+
+.main-content{
+    margin-left: 30rem;
+    padding: 1rem 2rem;
+}
+
+
+/* SUBJECT SELECTION PAGE */
 
