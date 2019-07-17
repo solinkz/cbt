@@ -168,7 +168,11 @@ nav.app-top.app-top--white{
     text-transform: capitalize;
     transition: all .3s;
 }
-.sidebar-menu ul li a.active, .sidebar-menu ul li a:hover{
+.sidebar-menu ul li a:hover{
+   background-color: var(--color-secondary-light);
+
+}
+.sidebar-menu ul li a.active{
    background-color: var(--color-secondary-light);
    border-left: 5px solid var(--color-primary);
 }
