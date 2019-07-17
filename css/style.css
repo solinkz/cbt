@@ -63,8 +63,14 @@ nav.app-top{
     height: var(--app-top-height);
     top: 0;
     left: 0;
+    z-index: 3;
 }
 
+nav.app-top.app-top--white{
+    background: #fff;
+    box-shadow: 0  2px 2px rgba(0,0,0,.1);
+
+}
 
 
 .app-brand{
@@ -90,13 +96,17 @@ nav.app-top{
 .sidebar{
     width: 30rem;
     background-color: #fff;
-    border-radius: 0 1rem 1rem 0;
-    box-shadow: 1rem 1rem 2rem rgba(0,0,0,.15);
-    height: 70vh;
+    /* border-radius: 0 1rem 1rem 0; */
+    /* box-shadow: 1rem 1rem 2rem rgba(0,0,0,.15); */
+    box-shadow: 2px 0 2px rgba(0,0,0,.15);
+    /* height: 70vh; */
+    height: calc(100vh - var(--app-top-height));
+    margin-top: var(--app-top-height);
     position: fixed;
-    top: 50%;
+    /* top: 50%; */
+    top: 0;
     left: 0;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     padding: 0;
 }
 
@@ -127,10 +137,32 @@ nav.app-top{
 }
 
 .main-content{
-    margin-left: 30rem;
-    padding: 1rem 2rem;
+    margin-left: 32rem;
+    padding: 1rem 3rem;
+    
 }
 
 
 /* SUBJECT SELECTION PAGE */
 
+.subject-selection{
+    margin-top: 2rem;
+    padding:  0 3rem; 
+}
+
+.subject-selection-category .form-check{
+   padding: 1rem ;
+}
+.subject-selection-category .form-check-label{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.subject-seletion-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    /* background-color: #fff; */
+}
