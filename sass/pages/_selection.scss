@@ -1,0 +1,26 @@
+.subject-selection{
+    margin-top: 2rem;
+    padding:  0 3rem; 
+}
+
+.subject-selection-category {
+    background-color: #fff;
+   border-radius: 5px;
+}
+.subject-selection-category .form-check{
+
+   padding: 1rem ;
+}
+.subject-selection-category .form-check-label{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.subject-seletion-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    /* background-color: #fff; */
+}

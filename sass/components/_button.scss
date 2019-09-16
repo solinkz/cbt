@@ -1,0 +1,36 @@
+.btn{
+    font-size: $default-font-size;
+
+    &-primary{
+        background-color: $color-primary;
+        border: 0;
+        outline: none;
+        transition: all .3s;
+
+        &:hover{
+            transform: translateY(-.4rem) scale(1.01);
+        
+        }
+
+        &:focus,
+        &:active{
+            transform: translateY(0);
+        
+        }
+
+        &--exam{
+            padding: 1rem 2rem;
+            border-radius: 100px;
+            background: linear-gradient(to left, $color-primary, $color-secondary) !important;
+            
+            width: 16rem;
+            display: inline-flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+    }
+}
+
+

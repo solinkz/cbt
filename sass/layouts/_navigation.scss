@@ -1,0 +1,94 @@
+#app{
+    position: relative;
+}
+
+
+nav.app-top{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: $app-top-height;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+nav.app-top.app-top--white{
+    background: $color-white;
+    box-shadow: 0  2px 2px rgba(0,0,0,.1) ;
+
+}
+
+
+.app-brand{
+    display: block;
+    padding: 1rem;
+    max-width: 10rem;
+    height: 100%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.app-brand .brand-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.content-wrapper{
+    display: block;
+    margin-top: 7rem;
+   
+}
+
+.sidebar{
+    width: 30rem;
+    background-color: #fff;
+    
+    box-shadow: 2px 0 2px rgba(0,0,0,.15);
+   
+    height: calc(100vh - 7rem);
+    margin-top: $app-top-height;
+    position: fixed;
+   
+    top: 0;
+    left: 0;
+   
+    padding: 0;
+}
+
+.sidebar .sidebar-header{
+    padding: 2rem ;
+    text-align: center;
+}
+
+.sidebar .sidebar-header .sidebar-title{
+    font-size: 1.8rem;
+    color: $color-dark;
+    font-weight: 400;
+
+}
+
+.sidebar-menu{
+   padding: 0;
+}
+
+.sidebar-menu ul li a{
+    padding: 2rem;
+    color: $color-mid-dark;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+.sidebar-menu ul li a:hover{
+   background-color: $color-light;
+
+}
+.sidebar-menu ul li a.active{
+   background-color: $color-light;
+   border-left: 5px solid $color-primary;
+}
+
+.main-content{
+    margin-left: 32rem;
+    padding: 1rem 3rem;
+    
+}

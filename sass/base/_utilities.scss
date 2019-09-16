@@ -1,0 +1,24 @@
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8{
+    margin-top: 8rem !important;
+}
+.mb-8{
+    margin-bottom: 8rem !important;
+
+    @include respond(tab-port){
+        margin-bottom: 5rem !important; 
+    }
+}
+.mb-4{
+    margin-bottom: 3.5rem !important;
+    
+    @include respond(tab-port){
+        margin-bottom: 2.5rem !important; 
+    }
+}
+.mb-2{
+    margin-bottom: 1.5rem !important;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cbt",
+  "version": "1.0.0",
+  "description": "CBT UI",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass": "node-sass sass/main.scss css/style.comp.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solinkz/cbt.git"
+  },
+  "author": "Michael and Solomon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solinkz/cbt/issues"
+  },
+  "homepage": "https://github.com/solinkz/cbt#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

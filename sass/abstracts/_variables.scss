@@ -1,0 +1,16 @@
+$color-primary: #064acb;
+$color-secondary: #36aad8;
+$color-secondary-light: lighten($color-secondary, 10%);
+
+
+$app-top-height: 7rem;
+
+
+$color-black: #000;
+$color-dark: lighten($color-black, 10%);
+$color-mid-dark: lighten($color-black, 40%);
+$color-light: lighten($color-black, 98%);
+
+$color-white: #fff;
+
+$default-font-size: 1.6rem;
