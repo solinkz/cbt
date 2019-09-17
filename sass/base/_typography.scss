@@ -12,7 +12,7 @@ body{
 .heading-primary, 
 .heading-secondary, 
 .heading-tertiary{
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8;
     text-transform: uppercase;
     padding: 1.2rem 0;
@@ -30,4 +30,11 @@ body{
     font-weight: 400;
     line-height: 1.5;
 
+}
+
+
+.title{
+    font-size: 1.8rem;
+    color: $color-dark;
+    font-weight: 400;
 }

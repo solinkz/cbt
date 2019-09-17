@@ -1,12 +1,12 @@
 .btn{
     font-size: $default-font-size;
+    padding: .5rem 3rem; 
 
     &-primary{
         background-color: $color-primary;
         border: 0;
         outline: none;
         transition: all .3s;
-
         &:hover{
             transform: translateY(-.4rem) scale(1.01);
         
@@ -30,6 +30,12 @@
             align-items: center;
             color: #fff;
         }
+    }
+
+    &-light{
+        background: $color-light;
+        color: $color-dark;
+        box-shadow: 0 2px 2px rgba($color-dark, .1) !important;
     }
 }
 

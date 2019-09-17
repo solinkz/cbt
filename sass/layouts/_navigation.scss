@@ -11,13 +11,18 @@ nav.app-top{
     top: 0;
     left: 0;
     z-index: 3;
+
+    &--white{
+        background: $color-white;
+        box-shadow: 0  2px 2px rgba(0,0,0,.1);
+    }
+
+    &--transparent{
+        background: transparent;
+    }
 }
 
-nav.app-top.app-top--white{
-    background: $color-white;
-    box-shadow: 0  2px 2px rgba(0,0,0,.1) ;
 
-}
 
 
 .app-brand{
@@ -54,38 +59,91 @@ nav.app-top.app-top--white{
     left: 0;
    
     padding: 0;
+
+    &-landing{
+        height: 80vh;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        left: 2.5rem;
+        border-radius: 8px;
+        box-shadow: 1rem 2rem 4rem rgba($color-primary, .15);
+        padding:0 0 2rem 0;
+        margin-top: 0 !important;
+    }
+   &-header{
+        padding: 2rem ;
+        text-align: center;
+
+        .sidebar-title{
+            font-size: 1.8rem;
+            color: $color-dark;
+            font-weight: 400;
+
+        }
+    }
+    &-menu{
+       padding: 0;
+
+        ul li a{
+            padding: 2rem;
+            color: $color-mid-dark;
+            text-transform: capitalize;
+            transition: all .3s;
+            
+            &:hover{
+               background-color: $color-light;
+
+            }
+
+            .active{
+               background-color: $color-light;
+               border-left: 5px solid $color-primary;
+            }
+        }
+    }
+    &-list{
+        padding: 0;
+
+        ul li a{
+            padding: 1rem 2rem;
+            color: $color-mid-dark;
+
+            &:hover{
+                font-weight: 500;
+            }
+        }
+    }
+
+    //Sidebar form for landing page
+
+    &-form{
+        padding:1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        background: lighten($color-black, 98%);
+        border-radius: 8px 8px 0 0;
+
+        .form-control{
+            border: 0;
+            border-bottom: 1px solid $color-dark;
+            padding: 2rem;
+            text-align: center;
+            background: transparent;
+
+            &:focus,
+            &:hover{
+                outline: none;
+                box-shadow: none;
+                border-bottom: 1px solid $color-primary;
+            }
+        }
+    }
 }
 
-.sidebar .sidebar-header{
-    padding: 2rem ;
-    text-align: center;
-}
 
-.sidebar .sidebar-header .sidebar-title{
-    font-size: 1.8rem;
-    color: $color-dark;
-    font-weight: 400;
 
-}
 
-.sidebar-menu{
-   padding: 0;
-}
-
-.sidebar-menu ul li a{
-    padding: 2rem;
-    color: $color-mid-dark;
-    text-transform: capitalize;
-    transition: all .3s;
-}
-.sidebar-menu ul li a:hover{
-   background-color: $color-light;
-
-}
-.sidebar-menu ul li a.active{
-   background-color: $color-light;
-   border-left: 5px solid $color-primary;
-}
 
 .main-content{
     margin-left: 32rem;

@@ -33,7 +33,7 @@ body {
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
   text-transform: uppercase;
   padding: 1.2rem 0;
@@ -50,6 +50,11 @@ body {
   font-weight: 400;
   line-height: 1.5; }
 
+.title {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  font-weight: 400; }
+
 .text-center {
   text-align: center !important; }
 
@@ -65,8 +70,29 @@ body {
 .mb-2 {
   margin-bottom: 1.5rem !important; }
 
+.p2 {
+  padding: 2rem; }
+
+.p1-2 {
+  padding: 1rem 2rem; }
+
+.bg-gradient {
+  background: linear-gradient(to left, #064acb, #36aad8) !important;
+  color: #fff; }
+
+.d-flex-inverse {
+  display: flex;
+  flex-direction: column; }
+
+.text-mid-dark {
+  color: #666666 !important; }
+
+.text-low-dark {
+  color: #999999 !important; }
+
 .btn {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  padding: .5rem 3rem; }
   .btn-primary {
     background-color: #064acb;
     border: 0;
@@ -86,9 +112,18 @@ body {
       justify-content: space-between;
       align-items: center;
       color: #fff; }
+  .btn-light {
+    background: #e6e6e6;
+    color: #1a1a1a;
+    box-shadow: 0 2px 2px rgba(26, 26, 26, 0.1) !important; }
 
 .form {
   display: block; }
+  .form-control {
+    font-size: 2rem; }
+    @media (min-width: 48em) {
+      .form-control {
+        font-size: 1.4rem; } }
 
 .header {
   display: block; }
@@ -104,10 +139,11 @@ nav.app-top {
   top: 0;
   left: 0;
   z-index: 3; }
-
-nav.app-top.app-top--white {
-  background: #fff;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+  nav.app-top--white {
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+  nav.app-top--transparent {
+    background: transparent; }
 
 .app-brand {
   display: block;
@@ -135,35 +171,77 @@ nav.app-top.app-top--white {
   top: 0;
   left: 0;
   padding: 0; }
-
-.sidebar .sidebar-header {
-  padding: 2rem;
-  text-align: center; }
-
-.sidebar .sidebar-header .sidebar-title {
-  font-size: 1.8rem;
-  color: #1a1a1a;
-  font-weight: 400; }
-
-.sidebar-menu {
-  padding: 0; }
-
-.sidebar-menu ul li a {
-  padding: 2rem;
-  color: #666666;
-  text-transform: capitalize;
-  transition: all .3s; }
-
-.sidebar-menu ul li a:hover {
-  background-color: #e6e6e6; }
-
-.sidebar-menu ul li a.active {
-  background-color: #e6e6e6;
-  border-left: 5px solid #064acb; }
+  .sidebar-landing {
+    height: 80vh;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    left: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 1rem 2rem 4rem rgba(6, 74, 203, 0.15);
+    padding: 0 0 2rem 0;
+    margin-top: 0 !important; }
+  .sidebar-header {
+    padding: 2rem;
+    text-align: center; }
+    .sidebar-header .sidebar-title {
+      font-size: 1.8rem;
+      color: #1a1a1a;
+      font-weight: 400; }
+  .sidebar-menu {
+    padding: 0; }
+    .sidebar-menu ul li a {
+      padding: 2rem;
+      color: #666666;
+      text-transform: capitalize;
+      transition: all .3s; }
+      .sidebar-menu ul li a:hover {
+        background-color: #e6e6e6; }
+      .sidebar-menu ul li a .active {
+        background-color: #e6e6e6;
+        border-left: 5px solid #064acb; }
+  .sidebar-list {
+    padding: 0; }
+    .sidebar-list ul li a {
+      padding: 1rem 2rem;
+      color: #666666; }
+      .sidebar-list ul li a:hover {
+        font-weight: 500; }
+  .sidebar-form {
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: #fafafa;
+    border-radius: 8px 8px 0 0; }
+    .sidebar-form .form-control {
+      border: 0;
+      border-bottom: 1px solid #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+      background: transparent; }
+      .sidebar-form .form-control:focus, .sidebar-form .form-control:hover {
+        outline: none;
+        box-shadow: none;
+        border-bottom: 1px solid #064acb; }
 
 .main-content {
   margin-left: 32rem;
   padding: 1rem 3rem; }
+
+.landing-about {
+  margin-top: -4rem;
+  padding: 4rem; }
+  .landing-about p {
+    font-size: 1.6rem;
+    line-height: calc(1.6 * 1.6);
+    color: #666666; }
+
+.create-user {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 2rem 0; }
 
 .subject-selection {
   margin-top: 2rem;
