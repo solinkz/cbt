@@ -176,7 +176,6 @@ nav.app-top {
     transform: translateY(-50%);
     left: 2.5rem;
     border-radius: 8px;
-    box-shadow: 1rem 2rem 4rem rgba(6, 74, 203, 0.15);
     padding: 0 0 2rem 0;
     margin-top: 0 !important; }
   .sidebar-header {

@@ -19,7 +19,13 @@
 <body>
     
     <div id="app">
+        <!-- Top nav with logo -->
+
+        <!-- remove app-top--white to app-top--transparent
+            for a transparent header
+         -->
        <nav class="app-top app-top--white">
+
            <div class="container ">
                 <div class="app-brand">
                     <img src="images/logo.png" alt="logo" class="brand-img">
@@ -28,10 +34,20 @@
        </nav>
 
        <div class="content-wrapper">
-          
+
+          <!-- main content -->
            <div class="main-content">
                <div class="container-fluid">
+
                     <div class="row">
+
+                        <!-- back button column -->
+                        <!-- optional.
+                            for removal(
+                                delete entire col-md-2 section,
+                                then add justify-content-end to the row class above
+                            )
+                         -->
                         <div class="col-md-2">
                             <div class="back">
                                  <a href="#"class="btn btn-secondary">
@@ -40,16 +56,21 @@
                                 
                             </div>
                         </div>
+
                         <div class="col-md-10">
                             
+                        <!-- Score section -->
                            <div class="score border rounded shadow">
                                <h4 class="title my-4">Wonderful!, the score for your test are;</h4>
 
                                <div class="score-list">
+
+                                <!-- score items -->
                                    <div class="score-item">
                                        <div class="score-subject">
                                             <span class="subject"> Mathematics</span>
                                            
+                                            <!-- change class value-fail to value-success to denote successful score in color change -->
                                            <span class="value value-fail">10/40</span>
                                        </div>
                                        <button class="btn score-review">Review</button>
