@@ -155,10 +155,10 @@ nav.app-top.app-top--white {
   transition: all .3s; }
 
 .sidebar-menu ul li a:hover {
-  background-color: #fafafa; }
+  background-color: #e6e6e6; }
 
 .sidebar-menu ul li a.active {
-  background-color: #fafafa;
+  background-color: #e6e6e6;
   border-left: 5px solid #064acb; }
 
 .main-content {
