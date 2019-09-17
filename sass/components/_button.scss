@@ -23,7 +23,7 @@
             border-radius: 100px;
             background: linear-gradient(to left, $color-primary, $color-secondary) !important;
             
-            width: 16rem;
+            min-width: 16rem;
             display: inline-flex;
             margin: 0 auto;
             justify-content: space-between;

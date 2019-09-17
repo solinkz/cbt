@@ -1,0 +1,48 @@
+.score{
+	padding: 4rem;
+	background: $color-white;
+	margin-top: 3rem;
+
+	&-list{
+		margin: 2rem 0;
+	}
+
+	&-item{
+		padding: 1rem 0;
+		color: $color-mid-dark;
+		font-size: 1.6rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.score-subject{
+			.subject{
+				min-width: 15rem;
+				display: inline-block;
+			}
+			.value{
+				font-weight: 400;
+
+				&-fail{
+					color: red;
+				}
+				&-success{
+					color: $color-primary;
+				}
+			}
+
+		}
+		.score-review{
+			color: $color-dark;
+			font-weight: 400;
+			transition: all .3s ease-in-out;
+
+			&:hover{
+				background: $color-secondary;
+				color: $color-white;
+			}
+		}
+	}
+
+
+}

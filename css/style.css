@@ -40,7 +40,7 @@ body {
   color: #1a1a1a; }
 
 .heading-primary {
-  font-size: 3rem; }
+  font-size: 2.8rem; }
 
 .heading-secondary {
   font-size: 2.5rem; }
@@ -106,7 +106,7 @@ body {
       padding: 1rem 2rem;
       border-radius: 100px;
       background: linear-gradient(to left, #064acb, #36aad8) !important;
-      width: 16rem;
+      min-width: 16rem;
       display: inline-flex;
       margin: 0 auto;
       justify-content: space-between;
@@ -159,21 +159,19 @@ nav.app-top {
 
 .content-wrapper {
   display: block;
-  margin-top: 7rem; }
+  margin-top: 2rem; }
+  .content-wrapper-shift {
+    margin-top: 7rem; }
 
 .sidebar {
   width: 30rem;
-  background-color: #fff;
-  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.15);
-  height: calc(100vh - 7rem);
-  margin-top: 7rem;
-  position: fixed;
-  top: 0;
-  left: 0;
   padding: 0; }
   .sidebar-landing {
+    position: fixed;
     height: 80vh;
     top: 50%;
+    background-color: #fff;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.15);
     left: 0;
     transform: translateY(-50%);
     left: 2.5rem;
@@ -196,10 +194,10 @@ nav.app-top {
       text-transform: capitalize;
       transition: all .3s; }
       .sidebar-menu ul li a:hover {
-        background-color: #e6e6e6; }
-      .sidebar-menu ul li a .active {
-        background-color: #e6e6e6;
-        border-left: 5px solid #064acb; }
+        background-color: #f6fbfd; }
+    .sidebar-menu ul li a.active {
+      background-color: #f6fbfd;
+      border-left: 5px solid #36aad8; }
   .sidebar-list {
     padding: 0; }
     .sidebar-list ul li a {
@@ -224,9 +222,13 @@ nav.app-top {
         box-shadow: none;
         border-bottom: 1px solid #064acb; }
 
+.back {
+  margin-top: 3rem; }
+
 .main-content {
-  margin-left: 32rem;
   padding: 1rem 3rem; }
+  .main-content-shift {
+    margin-left: 32rem; }
 
 .landing-about {
   margin-top: -4rem;
@@ -242,6 +244,35 @@ nav.app-top {
   left: 0;
   text-align: center;
   padding: 2rem 0; }
+
+.score {
+  padding: 4rem;
+  background: #fff; }
+  .score-list {
+    margin: 2rem 0; }
+  .score-item {
+    padding: 1rem 0;
+    color: #666666;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .score-item .score-subject .subject {
+      min-width: 15rem;
+      display: inline-block; }
+    .score-item .score-subject .value {
+      font-weight: 400; }
+      .score-item .score-subject .value-fail {
+        color: red; }
+      .score-item .score-subject .value-success {
+        color: #064acb; }
+    .score-item .score-review {
+      color: #1a1a1a;
+      font-weight: 400;
+      transition: all .3s ease-in-out; }
+      .score-item .score-review:hover {
+        background: #36aad8;
+        color: #fff; }
 
 .subject-selection {
   margin-top: 2rem;
