@@ -28,11 +28,35 @@ nav.app-top{
 .app-brand{
     display: block;
     padding: 1rem;
-    max-width: 10rem;
+    max-width: 15rem;
     height: 100%;
     margin-left: auto;
     text-align: right;
+    &--exam{
+    display: inline-block;
+    padding: 1rem;
+    width: 45%;
+    height: 100%;
+        &-time{
+            display: inline-block;
+            
+            width:35%;
+            & span{
+                border: 1px solid red;
+                border-radius: 50%;
+                padding: 10px;
+            }
+        }
+        &-calc{
+            width: 35px;
+            height: 40px;
+            margin: 0 10px;
+        }
+    }
+
+    
 }
+
 
 .app-brand .brand-img{
     max-width: 100%;
@@ -160,5 +184,11 @@ nav.app-top{
     margin-left: 32rem;
 
     }
+    
+}
+.main-content-copy{
+    padding: 1rem 20rem;
+
+    
     
 }

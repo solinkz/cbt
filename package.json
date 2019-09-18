@@ -4,7 +4,7 @@
   "description": "CBT UI",
   "main": "index.js",
   "scripts": {
-     "compile:sass": "node-sass sass/main.scss css/style.comp.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css -w"
   },
   "repository": {
     "type": "git",
